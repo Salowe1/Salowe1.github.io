@@ -159,7 +159,24 @@ body { background: var(--smoky-black); }
 
 
 
+ &.type4
+    color: $color4
+    
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      height: 2px
+      width: 0
+      left: 0
+      background-color: red
+      transition: width 0.3s ease-in-out
 
+    &::after
+      bottom: 0
+    
+    &:hover::after
+      width: 50px
 
 /*-----------------------------------*\
   #REUSED STYLE
