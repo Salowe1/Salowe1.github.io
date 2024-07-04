@@ -17,10 +17,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Custom Styles */
+
+    /* Links hover and click color */
+    a:hover,
+    a:focus,
+    a:active {
+      color: gold !important;
+    }
+
+    /* Vertical line on the right side */
+    body::after {
+      content: '';
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(0deg, transparent, gold);
+      animation: liquid 3s infinite;
+    }
+
+    @keyframes liquid {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    /* Navbar adjustment */
+    .navbar-list .navbar-item:nth-child(1) .navbar-link::before {
+      content: 'Made by ';
+    }
+
+    .navbar-list .navbar-item:nth-child(1) .navbar-link {
+      display: inline-block;
+    }
+
+    .navbar-item:nth-child(2),
+    .navbar-item:nth-child(3) {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Main Content -->
   <main>
 
@@ -36,7 +81,7 @@
         <div class="info-content">
           <h1 class="name" title="Adouabou Salowe">Salowe Adouabou</h1>
           <p class="title">Software Engineer</p>
-          
+
           <div class="buttons">
             <a class="type4" href="https://tally.so/r/wMR4Kg" style="font-size: 12px; text-decoration: underline; color: hsl(45, 100%, 72%);">Free estimation</a>
             <a class="type4" href="https://calendly.com/adouaboucedric9" style="font-size: 12px; text-decoration: underline; color: hsl(45, 100%, 72%);">Let's discuss your project</a>
@@ -112,9 +157,7 @@
       <!-- Navbar -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>Salowe</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
       </nav>
@@ -162,7 +205,9 @@
             </li>
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width
+<!-- Continue from the previous snippet -->
+
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
@@ -230,12 +275,18 @@
 
   </main>
 
-  <!-- Ionicons -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- External Scripts (ionicons and custom script) -->
+  <script src="https://code.ionicons.com/ionicons/ionicons/ionicons.js"></script>
+  <script>
+    // JavaScript for sidebar toggle
+    const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+    const sidebarMoreInfo = document.querySelector('.sidebar-info_more');
 
-  <!-- Custom JS -->
-  <script src="./assets/js/script.js"></script>
+    sidebarBtn.addEventListener('click', () => {
+      sidebarMoreInfo.classList.toggle('active');
+    });
+  </script>
+
 </body>
 
 </html>
