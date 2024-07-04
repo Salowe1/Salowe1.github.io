@@ -38,6 +38,7 @@
       height: 100%;
       background: linear-gradient(0deg, transparent, gold);
       animation: liquid 3s infinite;
+      border-radius: 5px; /* Rounded corners for a more tree-like appearance */
     }
 
     @keyframes liquid {
@@ -61,6 +62,11 @@
     .navbar-item:nth-child(2),
     .navbar-item:nth-child(3) {
       display: none;
+    }
+
+    /* Chevron icon visibility */
+    .info_more-btn ion-icon {
+      display: inline-block; /* Ensure the chevron icon is visible */
     }
   </style>
 </head>
@@ -205,9 +211,7 @@
             </li>
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width
-<!-- Continue from the previous snippet -->
-
+                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
