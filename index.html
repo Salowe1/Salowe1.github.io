@@ -7,19 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,50 +21,32 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
+  <!-- Main Content -->
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- Sidebar -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Adouabou Salowe" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Adouabou Salowe</h1>
-
-          <p class="title" style="bottom:5px">Software Engineer </p>
-        
-        <button class="type4" href="https://tally.so/r/wMR4Kg">
-              
-              <a href="https://tally.so/r/wMR4Kg" style="font-size: 12px;top:10px;text-decoration: underline;position:relative;color:hsl(45, 100%, 72%);left:30px;">   Free estimation</a>
-            </button>
+          <h1 class="name" title="Adouabou Salowe">Adouabou Salowe</h1>
+          <p class="title">Software Engineer</p>
           
-          
-          <button class="type4" href="https://calendly.com/adouaboucedric9">
-              
-              <a href="https://calendly.com/adouaboucedric9" style="font-size: 12px;top:10px;text-decoration: underline;position:relative;color:hsl(45, 100%, 72%);left:30px;">   Let's discuss your project</a>
-            </button>
+          <div class="buttons">
+            <a class="type4" href="https://tally.so/r/wMR4Kg" style="font-size: 12px; text-decoration: underline; color: hsl(45, 100%, 72%);">Free estimation</a>
+            <a class="type4" href="https://calendly.com/adouaboucedric9" style="font-size: 12px; text-decoration: underline; color: hsl(45, 100%, 72%);">Let's discuss your project</a>
+          </div>
         </div>
-         
-         
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-       
-        
 
       </div>
 
@@ -80,701 +56,172 @@
 
         <ul class="contacts-list">
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="logo-linkedin"></ion-icon>
-
             </div>
-
             <div class="contact-info">
               <p class="contact-title">LinkedIn</p>
-
               <a href="https://www.linkedin.com/in/salowe-cedric-martinien-adouabou-b99770250/" class="contact-link">Salowe Cedric Martinien Adouabou</a>
             </div>
-
           </li>
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:adouaboucedric9@gmail.com" class="contact-link">adouaboucedric9@gmail.com</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+22607077418" class="contact-link">+226 07 07 74 18</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-
               <time datetime="2001-05-10">May 10, 2001</time>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Karpala, Ouagadougou, Burkina Faso</address>
             </div>
-
           </li>
-
         </ul>
-
-        
-
-       
 
       </div>
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- Main Content -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- Navbar -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
+      <!-- About Section -->
+      <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-
         <section class="about-text">
-          <p>
-            I'm a  creative and dynamic developer handling both the font-end and the back-end side. I spent a year learning English which gives me the capacity to transcript and translate both french and english documents. I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your mobile and web app so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way.
-          </p>
+          <p>I'm a creative and dynamic developer handling both the front-end and back-end side. I spent a year learning English which gives me the capacity to transcribe and translate both French and English documents. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+          <p>My job is to build your mobile and web app so that it is functional and user-friendly but at the same time attractive. Moreover, I add a personal touch to your product and make sure it is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.</p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- Services Section -->
         <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
+          <h3 class="h3 service-title">What I'm doing</h3>
           <ul class="service-list">
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-translation.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-translation.svg" alt="Translation icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Translation</h4>
-
-                <p class="service-item-text">
-                  Get great content proven to have professionalism
-                </p>
+                <p class="service-item-text">Get great content proven to have professionalism</p>
               </div>
-
             </li>
-
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title"> Web site development</h4>
-
-                <p class="service-item-text">
-                 I provide High-quality development of use friendly web sites  using HTML, CSS, JS, PHP, Python, and related frameworks.
-                </p>
+                <h4 class="h4 service-item-title">Web site development</h4>
+                <p class="service-item-text">I provide high-quality development of user-friendly websites using HTML, CSS, JS, PHP, Python, and related frameworks.</p>
               </div>
-
             </li>
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/logo.ico" alt="mobile app icon" width="40">
+                <img src="./assets/images/logo.ico" alt="Design icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Design</h4>
-
-                <p class="service-item-text">
-                  Choose my services and get The most modern and high-quality designs for your logos, web pages and posters.
-                </p>
+                <p class="service-item-text">Choose my services and get the most modern and high-quality designs for your logos, web pages, and posters.</p>
               </div>
-
             </li>
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile app development</h4>
-
-                <p class="service-item-text">
-                  Craft captivating mobile apps with native and cross-platform development, UX design, scalable architecture, and seamless integration.
-                </p>
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <p class="service-item-text">Professional development of applications for iOS and Android</p>
               </div>
-
             </li>
-
           </ul>
-
         </section>
 
-
-        <!--
-          - testimonials
-        -->
-
-        
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Durra Institue of Languages</h4>
-
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-               I spent a year working on the language skills. Then got the intermadiate level, took the proficiency and the Toefl test with successful results.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Burkina Institute of Technology</h4>
-
-              <span>2022 — 2025</span>
-
-              <p class="timeline-text">
-               Currently enrolled for a bachelor program in computer science and entrepreneurship 
-              </p>
-
-            </li>
-
-            
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web and mobile app developer</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-               
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Economist</h4>
-
-              <span>2023 — Present</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">English coach</h4>
-
-              <span>2021 — Present</span>
-
-              <p class="timeline-text">
-               worked with Durra's stuff. Able to help learners from scratch
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
+        <!-- Skills Section -->
+        <section class="skills">
+          <h3 class="h3 skills-title">Skills</h3>
           <ul class="skills-list content-card">
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">HTML-CSS-JS</h5>
+                <data value="65">65%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 65%; background-color: hsl(191, 94%, 42%);"></div>
               </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">English</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter</h5>
-                <data value="90">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Html-CSS-JS</h5>
-                <data value="50">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 45%;"></div>
-              </div>
-
             </li>
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">PHP</h5>
-                <data value="50">55%</data>
+                <data value="55">55%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
+                <div class="skill-progress-fill" style="width: 55%; background-color: hsl(191, 94%, 42%);"></div>
               </div>
-
             </li>
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Bootstrap</h5>
-                <data value="50">90%</data>
+                <h5 class="h5">Python</h5>
+                <data value="85">85%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" style="width: 85%; background-color: hsl(191, 94%, 42%);"></div>
               </div>
-
             </li>
-
-
-
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL-MySQL</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%; background-color: hsl(191, 94%, 42%);"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%; background-color: hsl(191, 94%, 42%);"></div>
+              </div>
+            </li>
           </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-          
-
-
-
-@
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-
-          </ul>
-
-@@ -593,120 +583,20 @@ <h2 class="h2 article-title">Portfolio</h2>
-                  <img src="images/Screenshot 2024-02-02 at 01.55.36.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Rent car Website</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-                <h3 class="project-title">Rent car mobile app</h3>
-
-                <p class="project-category">Applications</p>
-                <p class="project-category">Mobile Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-@@ -721,28 +611,12 @@ <h3 class="project-title">Summary</h3>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-                <p class="project-category">Mobile Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3898.025464635376!2d-1.4699314760081668!3d12.314071987944152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m5!1s0xe2ebc468cc2091b%3A0xa215ace8b8166dc9!2sKarpala%2C%20Ouagadougou!3m2!1d12.313838299999999!2d-1.4676394!4m3!3m2!1d12.3143383!2d-1.4669541!5e0!3m2!1sen!2sbf!4v1706732767198!5m2!1sen!2sbf" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
         </section>
 
       </article>
@@ -783,22 +230,12 @@
 
   </main>
 
+  <!-- Ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- Custom JS -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
