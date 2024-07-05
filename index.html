@@ -67,45 +67,35 @@
     /* Chevron icon visibility */
     .info_more-btn ion-icon {
       display: inline-block;
-      margin-left: 5px; /* Adjust as needed */
+      margin-left: 5px; /* Adjust margin for better alignment */
     }
 
-    /* Neon Animation for Percentages */
-    .skills-list .skills-item data {
-      animation: neon-numbers 1s infinite alternate;
+    /* Neon animation for percentages */
+    .skills-item data {
+      display: inline-block;
+      font-size: inherit;
+      position: relative;
+      color: hsl(191, 94%, 42%);
     }
 
-    @keyframes neon-numbers {
+    .skills-item data::after {
+      content: attr(value);
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      width: 0;
+      color: gold;
+      animation: neon-text 1s infinite alternate-reverse;
+    }
+
+    @keyframes neon-text {
       0% {
-        text-shadow: 0 0 5px gold;
+        width: 0;
       }
       100% {
-        text-shadow: 0 0 5px #ffcc00;
+        width: 100%;
       }
-    }
-
-    /* Carousel Animation */
-    .service-list {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      animation: scroll 10s infinite linear;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .service-item {
-      flex: 0 0 auto;
-      width: 100%;
-      scroll-snap-align: start;
     }
   </style>
 </head>
@@ -327,6 +317,23 @@
 
     sidebarBtn.addEventListener('click', () => {
       sidebarMoreInfo.classList.toggle('active');
+    });
+
+    // JavaScript for carousel effect
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceItems = document.querySelectorAll('.service-item');
+
+      serviceItems.forEach(item => {
+        const serviceList = item.querySelector('.service-list');
+        const services = item.querySelectorAll('.service-item');
+
+        let currentIndex = 0;
+        setInterval(() => {
+          services[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % services.length;
+          services[currentIndex].classList.add('active');
+        }, 3000); // Adjust interval as needed
+      });
     });
   </script>
 
