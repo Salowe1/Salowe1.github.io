@@ -34,10 +34,10 @@
       position: fixed;
       right: 0;
       top: 0;
-      width: 1px;
+      width: 5px;
       height: 100%;
       background: linear-gradient(0deg, transparent, gold);
-      animation: neon 1s infinite alternate-reverse;
+      animation: neon 1.5s infinite alternate;
       border-radius: 5px;
     }
 
@@ -45,9 +45,8 @@
       0% {
         box-shadow: 0 0 10px 2px gold;
       }
-
       100% {
-        box-shadow: 0 0 10px 1px gold;
+        box-shadow: 0 0 20px 5px gold;
       }
     }
 
@@ -67,24 +66,7 @@
 
     /* Chevron icon visibility */
     .info_more-btn ion-icon {
-      display: inline-block;
-    }
-
-    /* Carousel styles */
-    .service-carousel {
-      display: flex;
-      overflow: hidden;
-      width: 100%; /* Ensure carousel takes full width */
-    }
-
-    .service-item {
-      flex: 0 0 auto;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .service-item.active {
-      opacity: 1;
+      display: inline-block; /* Ensure the chevron icon is visible */
     }
   </style>
 </head>
@@ -200,44 +182,42 @@
         <section class="service">
           <h3 class="h3 service-title">What I'm doing</h3>
           <ul class="service-list">
-            <div class="service-carousel">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-translation.svg" alt="Translation icon" width="40">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Translation</h4>
-                  <p class="service-item-text">Get great content proven to have professionalism</p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web site development</h4>
-                  <p class="service-item-text">I provide high-quality development of user-friendly websites using HTML, CSS, JS, PHP, Python, and related frameworks.</p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/logo.ico" alt="Design icon" width="40">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Design</h4>
-                  <p class="service-item-text">Choose my services and get the most modern and high-quality designs for your logos, web pages, and posters.</p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
-                  <p class="service-item-text">Professional development of applications for iOS and Android</p>
-                </div>
-              </li>
-            </div>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-translation.svg" alt="Translation icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Translation</h4>
+                <p class="service-item-text">Get great content proven to have professionalism</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web site development</h4>
+                <p class="service-item-text">I provide high-quality development of user-friendly websites using HTML, CSS, JS, PHP, Python, and related frameworks.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/logo.ico" alt="Design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Design</h4>
+                <p class="service-item-text">Choose my services and get the most modern and high-quality designs for your logos, web pages, and posters.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <p class="service-item-text">Professional development of applications for iOS and Android</p>
+              </div>
+            </li>
           </ul>
         </section>
 
@@ -309,26 +289,8 @@
     sidebarBtn.addEventListener('click', () => {
       sidebarMoreInfo.classList.toggle('active');
     });
-
-    // JavaScript for carousel
-    const serviceCarousels = document.querySelectorAll('.service-carousel');
-
-    serviceCarousels.forEach(carousel => {
-      const serviceItems = carousel.querySelectorAll('.service-item');
-      let currentIndex = 0;
-      const intervalTime = 5000; // Adjust interval time as needed (in milliseconds)
-
-      const nextSlide = () => {
-        serviceItems[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % serviceItems.length;
-        serviceItems[currentIndex].classList.add('active');
-      };
-
-      setInterval(nextSlide, intervalTime);
-    });
   </script>
 
 </body>
 
 </html>
-
