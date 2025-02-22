@@ -2123,7 +2123,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --height: calc(var(--width) / 3);
     font-size: calc(var(--height) / 2.5); /* Reset font size for larger screens */
     transform: perspective(500px) rotateY(-15deg); /* Reset the rotation for larger screens */
-    margin-left: 0; /* Reset the left margin for larger screens */
+    padding-right: 20; /* Reset the left margin for larger screens */
   }
 
   .type4:hover {
