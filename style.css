@@ -2105,7 +2105,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --height: calc(var(--width) / 3);
     font-size: calc(var(--height) / 3); /* Adjust font size for smaller screens */
     transform: perspective(500px) rotateY(-10deg); /* Adjust the rotation for smaller screens */
-    margin-left: 20px; /* Add a left margin to prevent overlap or shift */
+    margin-left: 0px; /* Add a left margin to prevent overlap or shift */
   }
 
   .type4:hover {
