@@ -2194,7 +2194,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-
+  .type4 {
+    margin-left: 15px; /* Added left margin to prevent overlap */
+  }
 
   /**
    * REUSED STYLE
