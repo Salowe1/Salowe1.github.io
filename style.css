@@ -2126,6 +2126,13 @@ textarea.form-input::-webkit-resizer { display: none; }
  * Responsive for Samsung Galaxy S21+ (max-width: 412px)
  */
 
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * Responsive for Samsung Galaxy S21+ (max-width: 412px)
+ */
 @media (max-width: 412px) {
   .type4 {
     --width: 180px; /* Adjust width for smaller screens */
@@ -2143,7 +2150,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 /**
  * Reset for larger screens (min-width: 413px)
  */
-
 @media (min-width: 413px) {
   .type4 {
     --width: 250px; /* Reset width for larger screens */
