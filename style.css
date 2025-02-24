@@ -2099,6 +2099,25 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive for mobile screens (max-width: 450px)
  */
 
+@media only screen 
+  and (min-device-width: 412px) /* Minimum width for S21+ */
+  and (max-device-width: 480px) /* Maximum width for S21+ */
+  and (-webkit-min-device-pixel-ratio: 2.63) /* Pixel ratio for S21+ */
+  and (orientation: portrait) { /* Portrait orientation */
+  
+  .type4 {
+    --width: 220px; /* Adjusted width for S21+ */
+    --height: calc(var(--width) / 3);
+    font-size: calc(var(--height) / 3); /* Adjusted font size */
+    transform: perspective(500px) rotateY(-10deg); /* Adjusted rotation */
+    margin-left: 15px; /* Added left margin to prevent overlap */
+  }
+
+  .type4:hover {
+    transform: perspective(500px) rotateY(10deg); /* Adjusted hover rotation */
+  }
+}
+
 @media (max-width: 450px) {
   .type4 {
     --width: 200px; /* Adjust the width for smaller screens */
