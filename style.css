@@ -1753,6 +1753,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
+  .type4 {
+    margin-right: 15px; /* Added left margin to prevent overlap */
+  }
 
 
   /**
