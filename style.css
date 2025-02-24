@@ -2174,6 +2174,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 /**
  * responsive larger than 1250px screen
  */
+@media (min-width: 1250px) {
+	.type4 {
+    	margin-left: 15px; /* Added left margin to prevent overlap */
+  	}
+}
 
 @media (min-width: 1250px) {
 
@@ -2197,9 +2202,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-  .type4 {
-    margin-left: 15px; /* Added left margin to prevent overlap */
-  }
+  
 
   /**
    * REUSED STYLE
