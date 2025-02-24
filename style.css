@@ -1630,6 +1630,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+  <style>
   /* For 13-inch MacBook Air/Pro */
   @media (min-width: 1250px) {
     .type4 {
@@ -1661,6 +1662,10 @@ textarea.form-input::-webkit-resizer { display: none; }
       margin-right: 30px;
     }
   }
+</style>
+
+
+  
 
 
 
