@@ -1630,6 +1630,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+  /* For 13-inch MacBook Air/Pro */
+  @media (min-width: 1250px) {
+    .type4 {
+      margin-left: auto; /* Push the element to the right */
+      margin-right: 30px; /* Add some right margin for spacing */
+    }
+  }
+
+  /* For 13-inch MacBook */
+  @media (min-width: 1440px) {
+    .type4 {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+  }
+
+  /* For 14-inch MacBook Pro */
+  @media (min-width: 1680px) {
+    .type4 {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+  }
+
+  /* For 16-inch MacBook Pro */
+  @media (min-width: 1920px) {
+    .type4 {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+  }
+
+
 
 /**
  * responsive larger than 768px screen
