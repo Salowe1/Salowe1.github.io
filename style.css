@@ -1630,7 +1630,38 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+/* Desktop First Approach */
+@media (max-width: 1920px) {
+  .type4 {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
 
+@media (max-width: 1680px) {
+  .type4 {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .type4 {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .type4 {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .type4 {
+    margin-right: 10px;
+    transform: perspective(400px) rotateY(-10deg);
+  }
+}
   
 
 
