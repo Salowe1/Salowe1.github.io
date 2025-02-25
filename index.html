@@ -55,9 +55,15 @@
     }
 
     /* Navbar adjustment */
-    .navbar-list .navbar-item:nth-child(1) .navbar-link::before {
-      content: 'This is ';
+    .navbar-link[href="https://calendly.com/adouaboucedric9"] {
+      transition: all 0.3s ease;
+      position: relative;
     }
+
+  .navbar-link[href="https://calendly.com/adouaboucedric9"]:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 8px hsla(45, 100%, 72%, 0.4);
+  }
 
     .navbar-list .navbar-item:nth-child(1) .navbar-link {
       display: inline-block;
@@ -100,7 +106,7 @@
           </div>
 
         </div>
-<a href="https://github.com/Salowe1"  target="_blank" rel="noopener noreferrer" ">
+  <a href="https://github.com/Salowe1"  target="_blank" rel="noopener noreferrer" ">
        
   <button class="info_more-btn" data-sidebar-btn>
     <span>Show Contacts</span>
