@@ -1,639 +1,936 @@
-<!DOCTYPE html>
-<html lang="fr">
+translate contents into French expect classes <!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Personnel</title>
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!--
-    - #MAIN
-  -->
-  <main>
-    <!--
-      - #SIDEBAR
-    -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Adouabou Salowe Cedric Martinien</h1>
-          <p class="title">Développeur Fullstack Web & Mobile / Transcripteur-Traducteur Anglais</p>
-        </div>
-         <a href="https://tally.so/r/wMR4Kg" style="color: hsl(45, 100%, 72%);">Devis gratuit</a>
-         <a href="https://calendly.com/adouaboucedric9" class="book-appointment-link" style="color: hsl(45, 100%, 72%);">Discutons de votre projet</a>
-         
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Afficher les contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-       
-        
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:richard@example.com" class="contact-link">adouaboucedric9@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Téléphone</p>
-              <a href="tel:+12133522795" class="contact-link">+226 07 07 74 18</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Localisation</p>
-              <address>Ouagadougou, Burkina Faso</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <!--
-      - #main-content
-    -->
-    <div class="main-content">
-      <!--
-        - #NAVBAR
-      -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>À propos</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>CV</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-      <!--
-        - #ABOUT
-      -->
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">À propos de moi</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            Je suis un développeur créatif et dynamique, à l'aise aussi bien en front-end qu'en back-end. J'ai passé une année à apprendre l'anglais, ce qui me donne la capacité de transcrire et de traduire des documents en français comme en anglais. J'aime
-            transformer des problèmes complexes en designs simples, beaux et intuitifs.
-          </p>
-          <p>
-            Mon travail consiste à concevoir votre application mobile et web pour qu'elle soit fonctionnelle et conviviale, tout en étant attrayante.
-            De plus, j'apporte
-            une touche personnelle à votre produit et je m'assure qu'il soit accrocheur et facile à utiliser. Mon objectif est de transmettre
-            votre message et votre identité de la manière la plus créative possible.
-          </p>
-        </section>
-        <!--
-          - service
-        -->
-       <section class="service">
-  <h3 class="h3 service-title">Ce que je fais</h3>
-  <ul class="service-list">
-    <!-- SERVICE 1 -->
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-dev.svg" alt="Icône Développement" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Développement Web & Mobile</h4>
-        <p class="service-item-text">
-          Conception et réalisation d'applications web et mobiles modernes, fluides et sécurisées. Maîtrise des technologies full-stack (PHP, Python, JavaScript, Flutter, Vue.js) et d'ERP comme Odoo. Accompagnement complet : refonte, infogérance, gestion de serveurs et optimisation des performances.
-        </p>
-      </div>
-    </li>
-    <!-- SERVICE 2 -->
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/logo.ico" alt="Icône IA & Bots" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Intelligence Artificielle & Data Science</h4>
-        <p class="service-item-text">
-          Développement de solutions basées sur l'IA et le Deep Learning : Computer Vision (détection sur images satellites/drones), collecte et labellisation de données, entraînement de modèles sur mesure et création d'agents conversationnels (bots) adaptés aux besoins métiers.
-        </p>
-      </div>
-    </li>
-    <!-- SERVICE 3 -->
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-translation.svg" alt="Icône Dématérialisation" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Dématérialisation & Transformation Digitale</h4>
-        <p class="service-item-text">
-          Accompagnement des entreprises et institutions dans la numérisation de leurs processus métiers. Conception de plateformes de gestion en ligne, intégration de workflows automatisés et transition vers des infrastructures numériques efficaces.
-        </p>
-      </div>
-    </li>
-    <!-- SERVICE 4 -->
-    <li class="service-item">
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-app.svg" alt="Icône Économie Numérique" width="40">
-      </div>
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Économie Numérique & Stratégie Tech</h4>
-        <p class="service-item-text">
-          Évaluation économique et modélisation de projets technologiques : analyses économétriques, élaboration de business models, études de faisabilité et aide à la décision stratégique pour l'implémentation de solutions tech à fort impact.
-        </p>
-      </div>
-    </li>
-  </ul>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Adouabou Salowe Cedric Martinien</h1>
+
+          <p class="title">Web & mobile Fullstack developer / English Transcriptor-Translator</p>
+        </div>
+         <a href="https://tally.so/r/wMR4Kg" style="color: hsl(45, 100%, 72%);">Free estimation</a>
+
+         <a href="https://calendly.com/adouaboucedric9" class="book-appointment-link" style="color: hsl(45, 100%, 72%);">Let's discuss your project</a>
+
+         
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+       
+        
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">adouaboucedric9@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+226 07 07 74 18</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ouagadougou, Burkina Faso</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a  creative and dynamic developer handling both the font-end and the back-end side. I spent a year learning English which gives me the capacity to transcript and translate both french and english documents. I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your mobile and web app so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+       <section class="service">
+
+  <h3 class="h3 service-title">Ce que je fais</h3>
+
+  <ul class="service-list">
+
+    <!-- SERVICE 1 -->
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-dev.svg" alt="Icône Développement" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Développement Web & Mobile</h4>
+
+        <p class="service-item-text">
+          Conception et réalisation d'applications web et mobiles modernes, fluides et sécurisées. Maîtrise des technologies full-stack (PHP, Python, JavaScript, Flutter, Vue.js) et d'ERP comme Odoo. Accompagnement complet : refonte, infogérance, gestion de serveurs et optimisation des performances.
+        </p>
+      </div>
+
+    </li>
+
+    <!-- SERVICE 2 -->
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/logo.ico" alt="Icône IA & Bots" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Intelligence Artificielle & Data Science</h4>
+
+        <p class="service-item-text">
+          Développement de solutions basées sur l'IA et le Deep Learning : Computer Vision (détection sur images satellites/drones), collecte et labellisation de données, entraînement de modèles sur mesure et création d'agents conversationnels (bots) adaptés aux besoins métiers.
+        </p>
+      </div>
+
+    </li>
+
+    <!-- SERVICE 3 -->
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-translation.svg" alt="Icône Dématérialisation" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Dématérialisation & Transformation Digitale</h4>
+
+        <p class="service-item-text">
+          Accompagnement des entreprises et institutions dans la numérisation de leurs processus métiers. Conception de plateformes de gestion en ligne, intégration de workflows automatisés et transition vers des infrastructures numériques efficaces.
+        </p>
+      </div>
+
+    </li>
+
+    <!-- SERVICE 4 -->
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-app.svg" alt="Icône Économie Numérique" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Économie Numérique & Stratégie Tech</h4>
+
+        <p class="service-item-text">
+          Évaluation économique et modélisation de projets technologiques : analyses économétriques, élaboration de business models, études de faisabilité et aide à la décision stratégique pour l'implémentation de solutions tech à fort impact.
+        </p>
+      </div>
+
+    </li>
+
+  </ul>
+
 </section>
-        <!--
-          - testimonials
-        -->
-        
-        <!--
-          - testimonials modal
-        -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="icône de citation">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 juin 2021</time>
-              <div data-modal-text>
-                <p>
-                  Richard a été engagé pour créer une identité d'entreprise. Nous avons été très satisfaits du travail effectué. Il a
-                  beaucoup d'expérience
-                  et se soucie beaucoup des besoins du client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!--
-          - project modal (window)
-        -->
-        <div class="modal-container" data-project-modal-container>
-          <div class="overlay" data-project-overlay></div>
-          <section class="project-modal">
-            <button class="modal-close-btn" data-project-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <figure class="project-modal-img-box">
-              <img src="./assets/images/project-1.jpg" alt="" data-project-modal-img>
-            </figure>
-            <div class="modal-content">
-              <p class="project-modal-category" data-project-modal-category>Développement web</p>
-              <h4 class="h3 modal-title" data-project-modal-title>Titre du projet</h4>
-              <div data-project-modal-desc>
-                <p>Description du projet</p>
-              </div>
-              <a href="#" class="project-modal-link" target="_blank" rel="noopener noreferrer" data-project-modal-link>
-                Voir le projet
-                <ion-icon name="open-outline"></ion-icon>
-              </a>
-            </div>
-          </section>
-        </div>
-        <!--
-          - clients
-        -->
-        <section class="clients">
-          
-        </section>
-      </article>
-      <!--
-        - #RESUME
-      -->
-     <article class="resume" data-page="resume">
-  <header>
-    <h2 class="h2 article-title">CV</h2>
-  </header>
-  <!-- EDUCATION -->
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="book-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Formation</h3>
-    </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Université Virtuelle du Burkina Faso</h4>
-        <span>10/2023 — 10/2026</span>
-        <p class="timeline-text">
-          Licence en Sciences Économiques et de Gestion (Moyenne : 14.62/20 en 2ème année). Focus sur les mathématiques, la santé numérique et la cybersécurité.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Burkina Institute of Technology (BIT)</h4>
-        <span>10/2022 — 07/2025</span>
-        <p class="timeline-text">
-          Bachelor en Computer Science & Entrepreneurship. Soutenance de fin de cycle obtenue avec 17.5/20.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Durra Institute of Languages</h4>
-        <span>10/2021 — 08/2022</span>
-        <p class="timeline-text">
-          Cours d'anglais général niveau intermédiaire, maîtrise de l'anglais et passage du test TOEFL.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Lycée de l'Alliance Chrétienne</h4>
-        <span>09/2018 — 08/2021</span>
-        <p class="timeline-text">
-          Baccalauréat Série D (Note : 12.98/20).
-        </p>
-      </li>
-    </ol>
-  </section>
-  <!-- EXPERIENCE -->
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="briefcase-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Expérience</h3>
-    </div>
-    <ol class="timeline-list">
-      <!-- DIGIWORLD -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Fondateur & Lead Developer — DIGIWORLD</h4>
-        <span>20/01/2025 — Présent</span>
-        <p class="timeline-text">
-          Direction technique et réalisation de solutions numériques sur mesure :
-        </p>
-        <ul style="padding-left: 15px; margin-top: 8px; font-size: 0.9em; color: var(--light-gray);">
-          <li>• <strong>Marketplace PFNL :</strong> Développement d'une plateforme de commercialisation des Produits Forestiers Non Ligneux du Nahouri vers l'international (Projet de fin d'études en économie - Note : 17.5/20).</li>
-          <li>• <strong>Restauration :</strong> Prototype d'application de réservation de tables en restaurant via QR Codes interactifs.</li>
-          <li>• <strong>Transport & Logistique :</strong> Développement d'un prototype de gestion de flotte d'engins et d'une application de gestion de fret import/export.</li>
-          <li>• <strong>Secteur Auto :</strong> Conception de 3 modèles de sites web vitrines et de gestion pour garages automobiles.</li>
-          <li>• <strong>CRM :</strong> Déploiement d'un outil web de collecte terrain, suivi client, avec géolocalisation intégrée et vue multicanale  </li>
-          <li>• <strong>Bot :</strong> Déploiement de bot de prise de rendez-vous </li>
-          <li>• <strong>Santé :</strong> Création d'un site web de prise de rendez-vous en ligne pour psychothérapeute.</li>
-          <li>• <strong>IA & Cartographie :</strong> Modèle de Deep Learning (Computer Vision) pour la détection automatisée de concessions et parcelles non mises en valeur pour la taxation foncière.</li>
-        </ul>
-      </li>
-      <!-- YELTIM -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Co-fondateur & Développeur Full Stack — Yeltim</h4>
-        <span>01/2025 — 02/2026</span>
-        <p class="timeline-text">
-          Conception et développement intégral du site web de l'entreprise, du portail administratif et client (Bootstrap, PHP, PostgreSQL, Control-WebPanel).
-        </p>
-      </li>
-      <!-- INFINEON -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Analyse Financière — Infineon Technologies & BIT</h4>
-        <span>11/2025 — 12/2025</span>
-        <p class="timeline-text">
-          Réalisation de prévisions financières avec conversions multi-devises et analyses de scénarios pour le séchage intelligent de mangues.
-        </p>
-      </li>
-      <!-- PIDACC-BN -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Assistant de Formation SIG — PIDACC-BN</h4>
-        <span>11/2025 — 12/2025</span>
-        <p class="timeline-text">
-          Formation des participants sur ArcGIS 10.5 pour la réalisation de cartes thématiques et animation de sessions de terrain avec récepteurs GPS.
-        </p>
-      </li>
-      <!-- ALHUDA CIBE -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Stage en Économie Islamique — AlHuda CIBE</h4>
-        <span>11/2025 — 12/2025</span>
-        <p class="timeline-text">
-          Acquisition d'une compréhension approfondie des principes de la finance islamique.
-        </p>
-      </li>
-      <!-- TELIA INFORMATIQUE -->
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Développeur Logiciel — Telia Informatique SARL</h4>
-        <span>07/2023 — 09/2024</span>
-        <p class="timeline-text">
-          Développement d'un module Odoo (ERP Python) pour la gestion de stock en temps réel. Création d'un système de gestion de stage (PHP, WampServer) et maintenance réseau.
-        </p>
-      </li>
-    </ol>
-  </section>
-  <!-- SKILLS -->
-  <section class="skill">
-    <h3 class="h3 skills-title">Mes compétences</h3>
-    <ul class="skills-list content-card">
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Développement Full Stack Web & Mobile</h5>
-          <data value="90">90%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 90%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Python / Deep Learning / Data</h5>
-          <data value="85">85%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 85%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">SIG & Cartographie (ArcGIS, QGIS)</h5>
-          <data value="85">85%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 85%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">PHP / Bases de données (MySQL, PostgreSQL)</h5>
-          <data value="80">80%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 80%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Anglais</h5>
-          <data value="85">85%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 85%;"></div>
-        </div>
-      </li>
-    </ul>
-  </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - project modal (window)
+        -->
+
+        <div class="modal-container" data-project-modal-container>
+
+          <div class="overlay" data-project-overlay></div>
+
+          <section class="project-modal">
+
+            <button class="modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <figure class="project-modal-img-box">
+              <img src="./assets/images/project-1.jpg" alt="" data-project-modal-img>
+            </figure>
+
+            <div class="modal-content">
+
+              <p class="project-modal-category" data-project-modal-category>Web development</p>
+
+              <h4 class="h3 modal-title" data-project-modal-title>Project title</h4>
+
+              <div data-project-modal-desc>
+                <p>Project description</p>
+              </div>
+
+              <a href="#" class="project-modal-link" target="_blank" rel="noopener noreferrer" data-project-modal-link>
+                Visit project
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+     <article class="resume" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- EDUCATION -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Université Virtuelle du Burkina Faso</h4>
+        <span>10/2023 — 10/2026</span>
+        <p class="timeline-text">
+          Licence en Sciences Économiques et de Gestion (Moyenne : 14.62/20 en 2ème année). Focus sur les mathématiques, la santé numérique et la cybersécurité.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Burkina Institute of Technology (BIT)</h4>
+        <span>10/2022 — 07/2025</span>
+        <p class="timeline-text">
+          Bachelor en Computer Science & Entrepreneurship. Soutenance de fin de cycle obtenue avec 17.5/20.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Durra Institute of Languages</h4>
+        <span>10/2021 — 08/2022</span>
+        <p class="timeline-text">
+          Cours d'anglais général niveau intermédiaire, maîtrise de l'anglais et passage du test TOEFL.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Lycée de l'Alliance Chrétienne</h4>
+        <span>09/2018 — 08/2021</span>
+        <p class="timeline-text">
+          Baccalauréat Série D (Note : 12.98/20).
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <!-- DIGIWORLD -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Fondateur & Lead Developer — DIGIWORLD</h4>
+        <span>20/01/2025 — Present</span>
+        <p class="timeline-text">
+          Direction technique et réalisation de solutions numériques sur mesure :
+        </p>
+        <ul style="padding-left: 15px; margin-top: 8px; font-size: 0.9em; color: var(--light-gray);">
+          <li>• <strong>Marketplace PFNL :</strong> Développement d'une plateforme de commercialisation des Produits Forestiers Non Ligneux du Nahouri vers l'international (Projet de fin d'études en économie - Note : 17.5/20).</li>
+          <li>• <strong>Restauration :</strong> Prototype d'application de réservation de tables en restaurant via QR Codes interactifs.</li>
+          <li>• <strong>Transport & Logistique :</strong> Développement d'un prototype de gestion de flotte d'engins et d'une application de gestion de fret import/export.</li>
+          <li>• <strong>Secteur Auto :</strong> Conception de 3 modèles de sites web vitrines et de gestion pour garages automobiles.</li>
+          <li>• <strong>CRM :</strong> Déploiement d'un outil web de collecte terrain, suivi client, avec géolocalisation intégrée et vue multicanale  </li>
+          <li>• <strong>Bot :</strong> Déploiement de bot de prise de rendez-vous </li>
+          <li>• <strong>Santé :</strong> Création d'un site web de prise de rendez-vous en ligne pour psychothérapeute.</li>
+          <li>• <strong>IA & Cartographie :</strong> Modèle de Deep Learning (Computer Vision) pour la détection automatisée de concessions et parcelles non mises en valeur pour la taxation foncière.</li>
+        </ul>
+      </li>
+
+      <!-- YELTIM -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Co-fondateur & Développeur Full Stack — Yeltim</h4>
+        <span>01/2025 — 02/2026</span>
+        <p class="timeline-text">
+          Conception et développement intégral du site web de l'entreprise, du portail administratif et client (Bootstrap, PHP, PostgreSQL, Control-WebPanel).
+        </p>
+      </li>
+
+      <!-- INFINEON -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Analyse Financière — Infineon Technologies & BIT</h4>
+        <span>11/2025 — 12/2025</span>
+        <p class="timeline-text">
+          Réalisation de prévisions financières avec conversions multi-devises et analyses de scénarios pour le séchage intelligent de mangues.
+        </p>
+      </li>
+
+      <!-- PIDACC-BN -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Assistant de Formation SIG — PIDACC-BN</h4>
+        <span>11/2025 — 12/2025</span>
+        <p class="timeline-text">
+          Formation des participants sur ArcGIS 10.5 pour la réalisation de cartes thématiques et animation de sessions de terrain avec récepteurs GPS.
+        </p>
+      </li>
+
+      <!-- ALHUDA CIBE -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Stage en Économie Islamique — AlHuda CIBE</h4>
+        <span>11/2025 — 12/2025</span>
+        <p class="timeline-text">
+          Acquisition d'une compréhension approfondie des principes de la finance islamique.
+        </p>
+      </li>
+
+      <!-- TELIA INFORMATIQUE -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Développeur Logiciel — Telia Informatique SARL</h4>
+        <span>07/2023 — 09/2024</span>
+        <p class="timeline-text">
+          Développement d'un module Odoo (ERP Python) pour la gestion de stock en temps réel. Création d'un système de gestion de stage (PHP, WampServer) et maintenance réseau.
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skill">
+
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <ul class="skills-list content-card">
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Full Stack Web & Mobile Development</h5>
+          <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Python / Deep Learning / Data</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">SIG & Cartographie (ArcGIS, QGIS)</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">PHP / Databases (MySQL, PostgreSQL)</h5>
+          <data value="80">80%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">English</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
 </article>
-      <!--
-        - #PORTFOLIO
-      -->
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>Tous</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Développement web</button>
-            </li>
-          </ul>
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Sélectionner une catégorie</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>Développement web</button>
-              </li>
-            </ul>
-          </div>
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
-              data-project-title="Finance" data-project-category="Développement web"
-              data-project-link="#"
-              data-project-desc="Un concept de tableau de bord financier axé sur un suivi clair du budget, une répartition des dépenses et des résumés de comptes en un coup d'œil. Conçu avec une forte emphase sur la visualisation lisible des données.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-              </figure>
-              <h3 class="project-title">Finance</h3>
-              <p class="project-category">Développement web</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
-              data-project-title="Orizon" data-project-category="Développement web"
-              data-project-link="#"
-              data-project-desc="Une page d'accueil SaaS moderne conçue pour mettre en avant les fonctionnalités du produit et générer des inscriptions, avec une mise en page épurée et des sections réactives à chargement rapide.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-              </figure>
-              <h3 class="project-title">Restaurant</h3>
-              <p class="project-category">Développement web</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
-              data-project-title="Fundo" data-project-category="Web design"
-              data-project-link="https://bit.ly/4591KOz"
-              data-project-desc="Un design de plateforme de collecte de fonds explorant des visuels accessibles et un flux de don simple pour rendre le don sans effort.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-              </figure>
-              <h3 class="project-title">Garage Auto Performance</h3>
-              <p class="project-category">Web design</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="applications"
-              data-project-title="Brawlhalla" data-project-category="Applications"
-              data-project-link="https://bit.ly/yeltim_logistique_fret"
-              data-project-desc="Une page promotionnelle non officielle pour le jeu de combat en arène Brawlhalla, mettant en valeur les illustrations de personnages et les modes de jeu dans une mise en page audacieuse et énergique.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
-              </figure>
-              <h3 class="project-title">Fret Pro</h3>
-              <p class="project-category">Applications</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
-              data-project-title="DSM." data-project-category="Web design"
-              data-project-link="https://bit.ly/template_garage"
-              data-project-desc="Un concept de page d'accueil d'agence minimaliste, utilisant un espace blanc généreux et une typographie audacieuse pour mettre le travail en avant.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
-              </figure>
-              <h3 class="project-title">Garage Auto</h3>
-              <p class="project-category">Web design</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
-              data-project-title="MetaSpark" data-project-category="Web design"
-              data-project-link="https://bit.ly/yeltim_psy"
-              data-project-desc="Un concept de design pour une marque d'outils créatifs/AR, mêlant des couleurs ludiques à une grille épurée pour présenter fonctionnalités et cas d'usage.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-6.jpg" alt="metaspark" loading="lazy">
-              </figure>
-              <h3 class="project-title">Psychotherapist</h3>
-              <p class="project-category">Web design</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
-              data-project-title="Summary" data-project-category="Développement web"
-              data-project-link="https://bit.ly/yeltim_digipark"
-              data-project-desc="Un front-end d'application web de résumé de notes, axé sur une expérience d'écriture et de lecture sans distraction.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-7.jpg" alt="summary" loading="lazy">
-              </figure>
-              <h3 class="project-title">Gestion de flotte</h3>
-              <p class="project-category">Développement web</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="applications"
-              data-project-title="Task Manager" data-project-category="Applications"
-              data-project-link="https://bit.ly/4wmoDcc"
-              data-project-desc="Une application de gestion de tâches avec tableaux, échéances et suivi de statut, conçue pour garder le travail quotidien organisé.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-              </figure>
-              <h3 class="project-title">Restaurant</h3>
-              <p class="project-category">Applications</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
-              data-project-title="Arrival" data-project-category="Développement web"
-              data-project-link="#"
-              data-project-desc="Une page promotionnelle de film/événement construite autour d'une imagerie cinématographique et d'une section héro forte pour susciter l'attente.">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-              </figure>
-              <h3 class="project-title">Arrival</h3>
-              <p class="project-category">Développement web</p>
-            </li>
-          </ul>
-        </section>
-      </article>
-      <!--
-        - #BLOG
-      -->
-      
-      <!--
-        - #CONTACT
-      -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Formulaire de contact</h3>
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Adresse email" required data-form-input>
-            </div>
-            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Envoyer le message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
+              data-project-title="Finance" data-project-category="Web development"
+              data-project-link="#"
+              data-project-desc="A finance dashboard concept focused on clear budget tracking, spending breakdowns and at-a-glance account summaries. Built with a strong emphasis on readable data visualization.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Finance</h3>
+
+              <p class="project-category">Web development</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
+              data-project-title="Orizon" data-project-category="Web development"
+              data-project-link="#"
+              data-project-desc="A modern SaaS landing page built to highlight product features and drive sign-ups, with a clean layout and fast-loading, responsive sections.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Restaurant</h3>
+
+              <p class="project-category">Web development</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
+              data-project-title="Fundo" data-project-category="Web design"
+              data-project-link="https://bit.ly/4591KOz"
+              data-project-desc="A fundraising platform design exploring approachable visuals and a simple donation flow to make giving feel effortless.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Garage Auto Performance</h3>
+
+              <p class="project-category">Web design</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="applications"
+              data-project-title="Brawlhalla" data-project-category="Applications"
+              data-project-link="https://bit.ly/yeltim_logistique_fret"
+              data-project-desc="A fan-made promo page for the platform fighting game Brawlhalla, showcasing character art and game modes in a bold, energetic layout.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Fret Pro</h3>
+
+              <p class="project-category">Applications</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
+              data-project-title="DSM." data-project-category="Web design"
+              data-project-link="https://bit.ly/template_garage"
+              data-project-desc="A minimalist agency-style landing page concept, using generous whitespace and bold typography to put the work front and center.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Garage Auto</h3>
+
+              <p class="project-category">Web design</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web design"
+              data-project-title="MetaSpark" data-project-category="Web design"
+              data-project-link="https://bit.ly/yeltim_psy"
+              data-project-desc="A concept design for an AR/creative-tools brand, blending playful color with a clean grid to present features and use cases.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-6.jpg" alt="metaspark" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Psychotherapist</h3>
+
+              <p class="project-category">Web design</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
+              data-project-title="Summary" data-project-category="Web development"
+              data-project-link="https://bit.ly/yeltim_digipark"
+              data-project-desc="A note-summarizing web app front-end focused on a distraction-free writing and reading experience.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-7.jpg" alt="summary" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Gestion de flotte</h3>
+
+              <p class="project-category">Web development</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="applications"
+              data-project-title="Task Manager" data-project-category="Applications"
+              data-project-link="https://bit.ly/4wmoDcc"
+              data-project-desc="A to-do / task management app with boards, due dates and status tracking, built to keep daily work organized.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Restaurant</h3>
+
+              <p class="project-category">Applications</p>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-project-item data-category="web development"
+              data-project-title="Arrival" data-project-category="Web development"
+              data-project-link="#"
+              data-project-desc="A movie/event promo page built around cinematic imagery and a strong hero section to build anticipation.">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Arrival</h3>
+
+              <p class="project-category">Web development</p>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
