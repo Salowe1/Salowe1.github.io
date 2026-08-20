@@ -187,17 +187,27 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
+// NOTE: matching is done by POSITION (index), not by comparing the button's
+// visible text to data-page. Text-matching breaks as soon as the nav labels
+// are translated (e.g. "About" -> "A propos", "Resume" -> "CV") while the
+// data-page attributes stay in English — the labels then never equal the
+// data-page value and the section never gets the "active" class.
+// Index-based matching works regardless of language, as long as the nav
+// buttons and the [data-page] articles are listed in the same order in the HTML.
 for (let i = 0; i < navigationLinks.length; i++) {
+
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+    const clickedIndex = i;
+
+    for (let j = 0; j < pages.length; j++) {
+      if (clickedIndex === j) {
+        pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
       }
     }
 
